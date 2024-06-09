@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     line-height: 1.5;
-
-    /* border: 1px solid; */
 }
 head{
     display: none;
@@ -12,7 +10,6 @@ body{
     font:normal 100% sans-serif;
 }
 #navbar{
-    /* background-color: aquamarine; */
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -28,15 +25,21 @@ body{
     text-decoration: none;
     color: black;
 }
+#navbarmenu{
+    font-size: 1.5em;
+}
+#navbarmenu p{
+    display: none;
+}
 #navbarlist{
     text-align: right;
+    list-style-type: none;
 }
 #navbarlist li{
     display: inline-block;
     padding-right: 15px;
 }
 #navbarlist a{
-    font-size: 1.5em;
     color: black;
 }
 a{
@@ -44,4 +47,17 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+    /* #navbarlogo a{
+        color: blue;
+    } */
+    #navbarmenu p{
+        display: block;
+        text-align: right;
+        padding-right: 15px;
+    }
+    #navbarlist li{
+        display: none;
+    }
 }
